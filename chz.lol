@@ -8876,7 +8876,7 @@ NRSec:Toggle({
 
 NRSec:Divider()
 
-NRSec:Button({Name = "Reapply Now (换枪后手动刷新)", Callback = function()
+NRSec:Button({Name = "Reapply Now", Callback = function()
     NoRecoil.Reapply()
     Library:Notification("No Recoil reapplied", 2, Color3.fromRGB(120, 200, 255))
 end})
@@ -8891,11 +8891,11 @@ NRSec:Button({Name = "Disable & Restore Original", Callback = function()
 end})
 
 NRSec:Divider()
-NRSec:Label({Name = "换枪 / 重生 / 死亡后会自动重新应用。", Alignment = "Left"})
+NRSec:Label({Name = "chz.lol", Alignment = "Left"})
 
 -- ─── No Recoil 强度调节 ───
 NRTuneSec:Slider({
-    Name    = "Recoil Intensity (0=完全无后座 / 1=原始后座)",
+    Name    = "Recoil Intensity",
     Flag    = "nr_recoil",
     Min     = 0, Max = 1, Default = 0, Decimals = 0.01, Suffix = "",
     Callback = function(v) NoRecoil.SetRecoil(v) end
